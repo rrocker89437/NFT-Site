@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Background */
+  --bg-color-purple: #6029a3;
+  --bg-color-white: #f2f2f2;
+
+  /* Text */
+  --text-color-base: #2b2839;
+  --text-color-purple-lt: #cfa8ff;
+  --text-color-white: #f5f5f5;
+
+  /* Links */
+  --link: #ef5839;
+  --link-active-hover: #d4b44c;
+  --link-style: underline dotted;
+
+  /* Buttons */
+
+  --btn-padding: 10px 19px;
+  --btn-rad: 4.6px;
+
+  --btn-buy-bg: #5f29a3;
+  --btn-buy-text: #f2f2f2;
+
+  --btn-more-bg: #f0e0ff;
+  --btn-more-text: #5f29a3;
+
+  --btn-about-bg: #f2f2f2;
+  --btn-about-text: #5f29a3;
+
+  --btn-hover-bg: #f3e885;
+  --btn-hover-text: #2b283a;
+
+  /* Typography */
+  --font-body: "Poppins", serif;
+
+  --fs-base: 1rem; /* 16px */
+  --fs-p: 1rem; /* 16px */
+  --fs-h3: 1.25rem; /* 20px */
+  --fs-h2: 1.5rem; /* 24px */
+  --fs-h1: 2.25rem; /* 36px */
+
+  --fw-400: 400;
+  --fw-500: 500;
+}
+
+/* Resets */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--text-color-base);
+  background-color: var(--bg-color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+} */
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  font-style: italic;
+}
+/* ----------------------------------- */
+
+/* ? Layout Classes */
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------- */
+
+/* ? Common Styles */
+header,
+section,
+footer {
+  padding: 45px 0;
+}
+
+section p {
+  line-height: 23px;
+}
+
+header,
+.feature {
+  background-color: var(--bg-color-purple);
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+/* ----------------------------------- */
+
+/* Btn Styles */
+
+.btn {
+  display: inline-block;
+  margin: 5px 0;
+  padding: var(--btn-padding);
+  border-radius: var(--btn-rad);
+  text-decoration: none;
+  font-weight: var(--fw-500);
+  transition: all 250ms ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+  }
+}
+
+.buy-btn {
+  background-color: var(--btn-buy-bg);
+  color: var(--btn-buy-text);
+}
+
+.more-btn,
+.contact-btn {
+  background-color: var(--btn-more-bg);
+  color: var(--btn-more-text);
+}
+
+.about-btn {
+  background-color: var(--btn-about-bg);
+  color: var(--btn-about-text);
+}
+
+/* ----------------------------------- */
+
+/* ? Link Styles */
+a {
+  color: var(--link);
+  text-decoration: var(--link-style);
+
+  &:hover,
+  &:active {
+    color: var(--link-active-hover);
+  }
+}
+
+/* ----------------------------------- */
+
+/* ? Header Styles */
+header {
+  h1 {
+    font-size: var(--fs-h1);
+    color: var(--text-color-white);
+  }
+
+  h3 {
+    font-size: var(--fs-h3);
+    color: var(--text-color-purple-lt);
+  }
+}
+
+/* ----------------------------------- */
+
+/* ? Hero Styles */
+.hero {
+  .hero-img {
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: var(--fs-h2);
+    color: currentColor;
+  }
+
+  p {
+    font-size: var(--fs-p);
+    color: currentColor;
+  }
+}
+
+/* ----------------------------------- */
+
+/* ? Feature Styles */
+.feature {
+  color: var(--text-color-white);
+
+  .feature-img-container {
+    display: flex;
+    justify-content: space-between;
+
+    .feature-img {
+      width: 300px;
+      border-radius: 4.6px;
+    }
+  }
+}
+
+/* ----------------------------------- */
+
+/* ? Footer Styles */
+footer {
+  p {
+    text-align: center;
+    font-size: var(--font-size-base);
+    color: var(--bg-color-purple);
+  }
+}
+
+/* ----------------------------------- */
